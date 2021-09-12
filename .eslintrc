@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2020": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:jest/style"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "no-constant-condition": ["error", { "checkLoops": false }],
+    "max-len": ["error", { "code": 125 }],
+    "no-await-in-loop": "off",
+    "valid-typeof": "off",
+    "import/no-unresolved": "off",
+    "no-underscore-dangle": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-restricted-syntax": "off",
+    "no-use-before-define": "off",
+    "no-prototype-builtins" : "off",
+    "object-curly-newline": "off",
+    "one-var": ["error", "never"],
+    "class-methods-use-this": "off",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  },
+  "plugins": ["jest"]
+}
